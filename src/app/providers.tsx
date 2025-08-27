@@ -1,20 +1,17 @@
 'use client'
 
-import type { ThemeProviderProps } from 'next-themes'
-import type { ReactNode } from 'react'
-
 import { HeroUIProvider, ToastProvider } from '@heroui/react'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { createTRPCClient, httpBatchLink } from '@trpc/client'
-import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { useRouter } from 'next/navigation'
+import type { ThemeProviderProps } from 'next-themes'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
+import type { ReactNode } from 'react'
 import { useState } from 'react'
 import SuperJSON from 'superjson'
-
+import { getQueryClient, getUrl, TRPCProvider } from '@/server/trpc/client'
 import type { AppRouter } from '@/server/trpc/routers/_app'
-
-import { TRPCProvider, getQueryClient, getUrl } from '@/server/trpc/client'
 
 declare module '@react-types/shared' {
   interface RouterConfig {

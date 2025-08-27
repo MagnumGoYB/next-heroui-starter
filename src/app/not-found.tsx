@@ -1,6 +1,7 @@
-import { subtitle, title } from '@/components/primitives'
 import { Button } from '@heroui/button'
 import { Link } from '@heroui/link'
+
+import { subtitle, title } from '@/components/primitives'
 
 export default function NotFound() {
   return (

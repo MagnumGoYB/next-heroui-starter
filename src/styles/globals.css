@@ -1,3 +1,6 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: tailwind v4 */
+/** biome-ignore-all lint/correctness/noUnknownProperty: tailwind v4 */
+
 @import "tailwindcss";
 
 @plugin "./hero.ts";
@@ -5,7 +8,6 @@
 @plugin "@tailwindcss/typography";
 
 @plugin "@iconify/tailwind4" {
-  /* biome-ignore lint/correctness/noUnknownProperty: <explanation> */
   prefixes: lucide, tabler;
 }
 

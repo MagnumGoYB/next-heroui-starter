@@ -1,7 +1,7 @@
+import { cn } from '@heroui/react'
+
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
-
-import { cn } from '@heroui/react'
 
 import { inter, roboto_mono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'

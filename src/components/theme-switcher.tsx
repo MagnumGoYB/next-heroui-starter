@@ -2,7 +2,7 @@
 
 import type { RadioProps } from '@heroui/react'
 
-import { RadioGroup, cn, useRadio } from '@heroui/react'
+import { cn, RadioGroup, useRadio } from '@heroui/react'
 import { useIsSSR } from '@react-aria/ssr'
 import { VisuallyHidden } from '@react-aria/visually-hidden'
 import { useTheme } from 'next-themes'

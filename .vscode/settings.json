@@ -3,10 +3,10 @@
   "editor.foldingImportsByDefault": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.oxc": "explicit",
     "source.fixAll.biome": "explicit",
     "source.removeUnusedImports": "explicit",
-    "source.organizeImports.biome": "explicit"
+    "source.organizeImports.biome": "explicit",
+    "source.biome": "explicit"
   },
   "editor.quickSuggestions": {
     "other": "on",
@@ -18,7 +18,7 @@
     "editor.defaultFormatter": "jock.svg"
   },
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"

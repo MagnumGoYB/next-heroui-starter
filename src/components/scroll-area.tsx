@@ -1,5 +1,12 @@
 import type { ScrollShadowVisibility } from '@heroui/react'
+import { cn, ScrollShadow } from '@heroui/react'
 import type { ScrollAreaProps as ScrollAreaRootProps } from '@radix-ui/react-scroll-area'
+import {
+  ScrollArea as ScrollAreaRoot,
+  ScrollAreaScrollbar,
+  ScrollAreaThumb,
+  ScrollAreaViewport,
+} from '@radix-ui/react-scroll-area'
 import type {
   ComponentPropsWithoutRef,
   ElementRef,
@@ -7,14 +14,6 @@ import type {
   PropsWithChildren,
   UIEventHandler,
 } from 'react'
-
-import { ScrollShadow, cn } from '@heroui/react'
-import {
-  ScrollArea as ScrollAreaRoot,
-  ScrollAreaScrollbar,
-  ScrollAreaThumb,
-  ScrollAreaViewport,
-} from '@radix-ui/react-scroll-area'
 import { forwardRef, useCallback, useState } from 'react'
 
 type OnScrollState = { isAtTop: boolean; isAtBottom: boolean }

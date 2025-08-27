@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, addToast } from '@heroui/react'
+import { addToast, Button } from '@heroui/react'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { useEffect } from 'react'
 
