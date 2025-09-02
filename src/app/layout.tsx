@@ -1,11 +1,8 @@
 import { cn } from '@heroui/react'
-
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
-
 import { inter, roboto_mono } from '@/config/fonts'
 import { siteConfig } from '@/config/site'
-
 import { Providers } from './providers'
 
 import '@/styles/globals.css'

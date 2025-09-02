@@ -1,10 +1,9 @@
 import { initTRPC } from '@trpc/server'
-import { headers } from 'next/headers'
 import { cache } from 'react'
 import SuperJSON from 'superjson'
 
 export const createContext = cache(async () => {
-  return { headers: await headers() }
+  return {}
 })
 
 const t = initTRPC.context<typeof createContext>().create({

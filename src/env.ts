@@ -7,15 +7,15 @@ export const env = createEnv({
       .enum(['development', 'production', 'test'])
       .default('development'),
     PORT: z.coerce.number().default(3000),
-    VERCEL: z.coerce.boolean().default(false),
-    VERCEL_ENV: z.enum(['development', 'preview', 'production']).optional(),
   },
-  client: {},
+  client: {
+    NEXT_PUBLIC_APP_URL: z.string().url(),
+  },
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
     PORT: process.env.PORT,
-    VERCEL: process.env.VERCEL === '1',
-    VERCEL_ENV: process.env.VERCEL_ENV,
+
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   },
   emptyStringAsUndefined: true,
 })

@@ -1,7 +1,5 @@
 import type { NextRequest } from 'next/server'
-
 import { NextResponse } from 'next/server'
-
 import { caller } from '@/server/trpc/server'
 
 const trpc = caller()

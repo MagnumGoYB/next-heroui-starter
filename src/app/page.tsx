@@ -1,7 +1,6 @@
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 import { Suspense } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
-
 import { Counter } from '@/components/counter'
 import { ErrorPanel } from '@/components/error-panel'
 import { HealthData } from '@/components/health-data'
